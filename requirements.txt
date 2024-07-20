@@ -1,0 +1,6 @@
+#itemadapter==0.8.0
+#itemadapter==0.9.0
+#Scrapy==2.9.0
+#Scrapy==2.11.2
+#TwoCaptcha==0.0.1
+2captcha-python
