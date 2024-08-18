@@ -27,12 +27,12 @@ class NmCourtsSpider(scrapy.Spider):
     }
     custom_settings = {
         'FEED_FORMAT': 'csv',
-        'FEED_URI': 'output_03.csv'
+        'FEED_URI': 'output.csv'
     }
 
     def __init__(self):
         super().__init__()
-        self.inputs = list(csv.DictReader(open('input_01.csv')))
+        self.inputs = list(csv.DictReader(open('input.csv')))
 
     def start_requests(self):
         if self.inputs:
