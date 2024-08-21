@@ -134,13 +134,13 @@ class NmCourtsSpider(scrapy.Spider):
 
         if current_input.get('filing_start_date'):
             start_date_split=current_input.get('filing_start_date').split('/')
-            start_date=start_date_split[0]
-            start_month=start_date_split[1]
+            start_date=str(int(start_date_split[0])-1)
+            start_month=str(int(start_date_split[1])-1)
             start_year=start_date_split[2]
 
             end_date_split=current_input.get('filing_end_date').split('/')
-            end_date=end_date_split[0]
-            end_month=end_date_split[1]
+            end_date=str(int(end_date_split[0])-1)
+            end_month=str(int(end_date_split[1])-1)
             end_year=end_date_split[2]
             data = {
                 'formids': 'csrfToken,If_2,If_3,partyName,driversLicense,dlState,If_4,dob,yearOnlyDob,caseNumberPartialSearch,courtTypeSelection,dol,caseCategory,dateSearch,dateType,monthFromSelection,dol2,yearFrom,monthToSelection,dol3,yearTo,results,Submit',

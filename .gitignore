@@ -1,0 +1,8 @@
+venv/
+.pyc
+NmCourts/__pycache__/__init__.cpython-312.pyc
+NmCourts/spiders/__pycache__/nm_courts.cpython-312.pyc
+NmCourts/spiders/__pycache__/nm_courts.cpython-311.pyc
+NmCourts/spiders/__pycache__/__init__.cpython-312.pyc
+NmCourts/__pycache__/settings.cpython-312.pyc
+NmCourts/__pycache__/__init__.cpython-312.pyc
